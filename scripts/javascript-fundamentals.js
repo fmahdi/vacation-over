@@ -45,3 +45,32 @@ for (i = 0; i < collection.length; i++) {
     summUp += collection[i];
 }
 console.log(summUp);
+
+//Arrays and Objects
+
+const odd = [1, 3, 5, 7, 9, 11];
+console.log(odd[1]);
+
+const champion = {
+    name: "Darius",
+    country: "Noxius",
+    age: 40,
+    powers: ["q", "w", "e", "r"],
+    skins: true,
+    category: "Melee"
+};
+//data extraction
+console.log(champion.name);
+console.log(champion.age);
+console.log(champion.powers);
+console.log(champion["skins"]);
+var extract = "category";
+console.log(champion[extract]);
+
+//template literals
+var text = `THis is a text for test or test for ${box} & ${box1}`;
+console.log(text);
+
+var text = `THis is a text for test or test for ${champion.category} & ${champion["age"]}`;
+console.log(text);
+
