@@ -74,3 +74,10 @@ console.log(text);
 var text = `THis is a text for test or test for ${champion.category} & ${champion["age"]}`;
 console.log(text);
 
+//spread operator
+const oddCopy = [...odd];
+const oddCopy1 = odd;
+odd.push(99, 111);
+console.log(odd);
+console.log(oddCopy);
+console.log(oddCopy1);
